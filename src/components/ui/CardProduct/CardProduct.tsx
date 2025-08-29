@@ -1,4 +1,4 @@
-import { Card, CardBody, CardFooter, Image } from "@heroui/react";
+import { Card, CardBody, CardFooter, CardHeader, Image } from "@heroui/react";
 import { FaGlobe, FaStar, FaStore, FaTruck } from "react-icons/fa";
 import { FaBagShopping } from "react-icons/fa6";
 
@@ -7,15 +7,24 @@ interface PropTypes {
     img: string;
     price: string;
     rating: number;
+    onSale?: boolean
 }
 
-const CardProduct = ({ title, img, price, rating }: PropTypes) => {
+const CardProduct = ({ title, img, price, rating, onSale }: PropTypes) => {
     return (
-        <Card shadow="sm" className="flex flex-col justify-between">
+        <Card shadow="sm" className="flex flex-col justify-between" isHoverable>
+            {onSale && (
+                <CardHeader className="absolute p-1 flex z-10 bg-[#E62727]/60 backdrop-blur-xl justify-center">
+                    <p className="text-white font-bold text-[18px]">
+                        ON SALE
+                    </p>
+                </CardHeader>
+            )}
+
             <CardBody className="overflow-visible p-0">
                 <Image
                     alt={title}
-                    className="w-full object-cover h-[150px]"
+                    className="z-0 w-full object-cover h-[200px]"
                     radius="lg"
                     shadow="none"
                     src={img}

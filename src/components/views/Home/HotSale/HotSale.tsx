@@ -1,6 +1,6 @@
-import Container from '@/components/ui/Container';
-import { Button, Card, CardFooter, CardHeader, Image } from '@heroui/react';
-import React from 'react';
+import Container from "@/components/ui/Container";
+import { Button, Card, CardFooter, CardHeader, Image } from "@heroui/react";
+import React from "react";
 
 const HotSale = () => {
   const saleCards = [
@@ -9,32 +9,32 @@ const HotSale = () => {
       title: "Hot Sale CCTV",
       discount: "Up to 40% Off",
       buttonText: "Shop Now",
-      image: "/images/banners/dummy-prouct.jpg  ",
+      image: "/images/banners/hotsale-1.jpg",
       footerTitle: "CCTV Pro",
-      footerDesc: "Best security for your home."
+      footerDesc: "Best security for your home.",
     },
     {
       id: 2,
       title: "Exclusive Smart Lock",
       discount: "Save 30% Today",
       buttonText: "Shop Now",
-      image: "/images/banners/dummy-prouct.jpg",
+      image: "/images/banners/product-2.jpg",
       footerTitle: "Smart Lock",
-      footerDesc: "Safety with one touch."
+      footerDesc: "Safety with one touch.",
     },
     {
       id: 3,
       title: "Premium Alarm System",
       discount: "Up to 25% Off",
       buttonText: "Shop Now",
-      image: "/images/banners/dummy-prouct.jpg",
+      image: "/images/banners/hotsale-3.jpg",
       footerTitle: "Alarm System",
-      footerDesc: "Stay secure 24/7."
-    }
+      footerDesc: "Stay secure 24/7.",
+    },
   ];
 
   return (
-    <Container className='gap-5 flex-col md:flex-row'>
+    <Container className="gap-5 flex-col md:flex-row">
       {saleCards.map((item) => (
         <Card
           key={item.id}
@@ -42,8 +42,12 @@ const HotSale = () => {
           className="w-full h-[300px] col-span-12 sm:col-span-7"
         >
           <CardHeader className="absolute z-10 top-1 flex-col items-start">
-            <p className="text-[30px] font-semibold text-[#0A3353]">{item.title}</p>
-            <h4 className="text-[#0A3353] font-medium text-xl">{item.discount}</h4>
+            <p className="text-[30px] font-semibold text-[#0A3353]">
+              {item.title}
+            </p>
+            <h4 className="text-[#0A3353] font-medium text-xl">
+              {item.discount}
+            </h4>
           </CardHeader>
           <Image
             removeWrapper
@@ -63,7 +67,10 @@ const HotSale = () => {
                 <p className="text-tiny text-white">{item.footerDesc}</p>
               </div>
             </div>
-            <Button radius="full" className='bg-[#3666AA] text-white text-[20px] font-bold '>
+            <Button
+              radius="full"
+              className="bg-[#3666AA] text-white text-[20px] font-bold "
+            >
               {item.buttonText}
             </Button>
           </CardFooter>
@@ -71,7 +78,6 @@ const HotSale = () => {
       ))}
     </Container>
   );
-
 };
 
 export default HotSale;

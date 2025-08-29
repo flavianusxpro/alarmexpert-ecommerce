@@ -1,46 +1,46 @@
-import Container from '@/components/ui/Container'
-import { Button, Card, CardHeader, Image } from '@heroui/react'
-import React from 'react'
+import Container from "@/components/ui/Container";
+import { Button, Card, CardHeader, Image } from "@heroui/react";
+import React from "react";
 
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 
-import 'swiper/css'
-import 'swiper/css/pagination'
+import "swiper/css";
+import "swiper/css/pagination";
 
 const PopularCategories = () => {
   const popularCategories = [
     {
       id: 1,
-      title: "Access Control",
-      image: "https://heroui.com/images/card-example-4.jpeg",
+      title: "CCTV",
+      image: "images/banners/Banner-2.jpg",
       buttonText: "More",
     },
     {
       id: 2,
-      title: "Smart Lock",
-      image: "https://heroui.com/images/card-example-2.jpeg",
+      title: "Automation",
+      image: "images/banners/Banner-1.jpg",
       buttonText: "More",
     },
     {
       id: 3,
-      title: "Surveillance",
-      image: "https://heroui.com/images/card-example-3.jpeg",
+      title: "Access Control",
+      image: "/images/banners/hotsale-1.jpg",
       buttonText: "More",
     },
     {
       id: 4,
-      title: "CCTV",
-      image: "https://heroui.com/images/card-example-1.jpeg",
+      title: "Smart Lock",
+      image: "/images/banners/hotsale-2.jpg",
       buttonText: "More",
     },
     {
       id: 5,
-      title: "Automation",
-      image: "https://heroui.com/images/card-example-5.jpeg",
+      title: "Surveillance",
+      image: "images/banners/hotsale-3.jpg",
       buttonText: "More",
     },
-  ]
+  ];
 
   return (
     <Container>
@@ -59,12 +59,17 @@ const PopularCategories = () => {
           {popularCategories.map((item) => (
             <SwiperSlide key={item.id}>
               <Card className="h-[300px] relative overflow-hidden">
-                <CardHeader className="absolute z-10 flex-col items-start gap-[20px] 
-                         bg-white/30 backdrop-blur-xs">
-                  <h4 className="text-white text-[30px] font-semibold">
+                <CardHeader
+                  className="absolute z-10 flex-col items-start gap-[20px] 
+                         bg-white/40 backdrop-blur-sm"
+                >
+                  <h4 className="text-[#0A3353] text-[30px] font-semibold">
                     {item.title}
                   </h4>
-                  <Button className="bg-white text-[20px] font-bold" radius="full">
+                  <Button
+                    className="bg-white text-[20px] font-bold"
+                    radius="full"
+                  >
                     {item.buttonText}
                   </Button>
                 </CardHeader>
@@ -81,7 +86,7 @@ const PopularCategories = () => {
         </Swiper>
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default PopularCategories
+export default PopularCategories;

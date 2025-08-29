@@ -1,13 +1,13 @@
-import { FaRegHeart, FaRegUser } from "react-icons/fa"
-import { MdOutlineShoppingCart } from "react-icons/md"
-import { TbArrowRightToArc } from "react-icons/tb"
+import { FaRegHeart, FaRegUser } from "react-icons/fa";
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { TbArrowRightToArc } from "react-icons/tb";
 
 const NAV_LINKS = [
   { label: "FAQ", href: "/faq" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
   { label: "Compare", href: "/compare" },
-]
+];
 
 const NAV_CATEGORIES = [
   { label: "ACCESS CONTROL", href: "/access-control" },
@@ -21,7 +21,7 @@ const NAV_CATEGORIES = [
   { label: "INSTALLATION SERVICE", href: "/installation-service" },
   { label: "BRANDS", href: "/brands" },
   { label: "ON SALE", href: "/on-sale" },
-]
+];
 
 const AUTH_BUTTONS = [
   {
@@ -30,27 +30,30 @@ const AUTH_BUTTONS = [
     variant: "solid",
     icon: <TbArrowRightToArc />,
   },
-]
+];
 
 const USER_ACTION_BUTTONS = [
   {
     label: "Wishlist",
     href: "/wishlist",
     variant: "light",
+    isAuthBtn: false,
     icon: <FaRegHeart />,
   },
   {
     label: "Cart",
     href: "/cart",
     variant: "light",
+    isAuthBtn: false,
     icon: <MdOutlineShoppingCart />,
   },
   {
     label: "Account",
     href: "/user",
     variant: "light",
+    isAuthBtn: true,
     icon: <FaRegUser />,
   },
-]
+];
 
-export { AUTH_BUTTONS, NAV_LINKS, USER_ACTION_BUTTONS, NAV_CATEGORIES }
+export { AUTH_BUTTONS, NAV_LINKS, USER_ACTION_BUTTONS, NAV_CATEGORIES };

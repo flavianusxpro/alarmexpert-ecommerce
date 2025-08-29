@@ -1,35 +1,35 @@
 import Container from "@/components/ui/Container";
-import CardProduct from "@/components/ui/CardProduct"; 
+import CardProduct from "@/components/ui/CardProduct";
 
 const LatestProducts = () => {
   const list = [
     {
       title: "Hikvision Wireless Outdoor Sounder DS-PS1-E-WB",
-      img: "/images/banners/product.jpg",
+      img: "/images/banners/product-5.jpg",
       price: "$79.0",
       rating: 4.5,
     },
     {
       title: "CCTV Camera Outdoor",
-      img: "/images/banners/product.jpg",
+      img: "/images/banners/product-1.jpg",
       price: "$120.0",
       rating: 5,
     },
     {
       title: "Smart Lock Pro",
-      img: "/images/banners/product.jpg",
+      img: "/images/banners/product-2.jpg",
       price: "$199.0",
       rating: 4,
     },
     {
       title: "Smart Lock Pro",
-      img: "/images/banners/product.jpg",
+      img: "/images/banners/product-3.jpg",
       price: "$199.0",
       rating: 4,
     },
     {
       title: "Smart Lock Pro",
-      img: "/images/banners/product.jpg",
+      img: "/images/banners/product-4.jpg",
       price: "$199.0",
       rating: 4,
     },
