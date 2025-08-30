@@ -3,7 +3,7 @@ import Container from "@/components/ui/Container";
 const CTABanner = () => {
   return (
     <Container className="p-8">
-      <div className="bg-[#F6F7E5] w-full py-4 px-8 flex items-center justify-between rounded-lg">
+      <div className="bg-[#F6F7E5] w-full py-4 px-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-10 md:gap-0 rounded-lg">
         <div className="flex items-center gap-[29px]">
           <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
             <svg
@@ -20,7 +20,6 @@ const CTABanner = () => {
               />
             </svg>
           </div>
-
           <div>
             <p className="text-[25px] font-medium text-[#008337]">
               {"We're now available"} <br />{" "}

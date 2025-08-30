@@ -23,7 +23,7 @@ const ArticleSection = () => {
         {articles.map((article) => (
           <div
             key={article.id}
-            className="flex flex-col md:p-20 p-5 gap-[100px] bg-[#D9D9D9] rounded-lg"
+            className="flex flex-col md:p-10 lg:p-20 p-5 gap-[100px] bg-[#D9D9D9] rounded-lg"
           >
             <h1 className="text-[26px] font-semibold mb-3 text-[#0A3353]">
               {article.description}

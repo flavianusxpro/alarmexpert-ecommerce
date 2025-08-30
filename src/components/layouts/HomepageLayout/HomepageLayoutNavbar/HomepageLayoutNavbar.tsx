@@ -11,7 +11,6 @@ import {
 import React from "react";
 import {
   AUTH_BUTTONS,
-  NAV_CATEGORIES,
   NAV_LINKS,
   USER_ACTION_BUTTONS,
 } from "../HomepageLayout.constants";
@@ -20,9 +19,17 @@ import Image from "next/image";
 import { CiSearch } from "react-icons/ci";
 import useHomepageLayoutNavbar from "./useHomepageLayoutNavbar";
 import ModalAuth from "@/components/ui/ModalAuth";
+import ShoppingCart from "@/components/ui/ShoppingCart";
+import HomepageLayoutNavbarPopupHover from "./HomepageLayoutNavbarPopupHover";
 
 const HomepageLayoutNavbar = () => {
-  const { openModalAuth, handleOpenModalAuth } = useHomepageLayoutNavbar();
+  const {
+    openModalAuth,
+    handleOpenModalAuth,
+
+    handleOpenModalShoppingCart,
+    openModalShoppingCart,
+  } = useHomepageLayoutNavbar();
 
   return (
     <header>
@@ -72,7 +79,7 @@ const HomepageLayoutNavbar = () => {
         maxWidth="full"
         isBordered
         position="static"
-        className="px-5 py-8"
+        className="p-0 md:px-5 md:py-8"
       >
         <div className="max-w-standard w-full mx-auto flex items-center">
           <NavbarBrand as={Link} href="/">
@@ -81,22 +88,34 @@ const HomepageLayoutNavbar = () => {
               alt="logo"
               width={316}
               height={75}
-              className="cursor-pointer"
+              className="cursor-pointer w-[160px] h-[40px] md:w-[220px] md:h-[55px] lg:w-[280px] lg:h-[65px] xl:w-[316px] xl:h-[75px] max-w-full object-contain"
             />
           </NavbarBrand>
 
-          <NavbarContent justify="center">
-            <NavbarItem className="hidden lg:flex lg:relative">
+          <NavbarContent
+            justify="center"
+            className="hidden lg:flex flex-1 min-w-0"
+          >
+            <NavbarItem className="lg:flex-1 lg:max-w-[700px] min-w-0 lg:relative">
               <Input
                 isClearable
-                className="w-[600px]"
                 placeholder="What are you looking for?"
-                startContent={<CiSearch />}
+                className="w-full min-w-0"
+                startContent={
+                  <CiSearch className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7" />
+                }
+                classNames={{
+                  input: `text-base h-[40px] md:h-[44px] md:text-lg lg:h-[48px] lg:text-xl`,
+                  inputWrapper: `h-[40px] md:h-[44px] lg:h-[48px]`,
+                }}
               />
             </NavbarItem>
           </NavbarContent>
 
-          <NavbarContent justify="end" className="gap-[37px]">
+          <NavbarContent
+            justify="end"
+            className="gap-[20px] md:gap-[28px] lg:gap-[34px]"
+          >
             {USER_ACTION_BUTTONS.map((item) => (
               <NavbarItem key={`button-${item.label}`}>
                 {item.isAuthBtn ? (
@@ -108,7 +127,7 @@ const HomepageLayoutNavbar = () => {
                         color="default"
                         variant={item.variant as ButtonProps["variant"]}
                         isIconOnly
-                        className="font-medium text-2xl"
+                        className="font-medium w-[36px] h-[36px] text-[24px] md:w-[44px] md:h-[44px] md:text-xl lg:w-[48px] lg:h-[48px] lg:text-2xl"
                       >
                         {item.icon}
                       </Button>
@@ -119,18 +138,36 @@ const HomepageLayoutNavbar = () => {
                     color="warning"
                     content={50}
                     shape="circle"
-                    className="text-white"
+                    className="text-white text-sm md:text-sm px-[4px] py-[2px] md:px-[6px] md:py-[3px]"
                   >
-                    <Button
-                      as={Link}
-                      color="default"
-                      href={item.href}
-                      variant={item.variant as ButtonProps["variant"]}
-                      isIconOnly
-                      className="font-medium text-2xl"
-                    >
-                      {item.icon}
-                    </Button>
+                    {item.label === "Cart" ? (
+                      <ShoppingCart
+                        isOpen={openModalShoppingCart}
+                        onOpenChange={handleOpenModalShoppingCart}
+                        triggerButton={
+                          <Button
+                            color="default"
+                            variant={item.variant as ButtonProps["variant"]}
+                            isIconOnly
+                            onPress={() => handleOpenModalShoppingCart(true)} 
+                            className="font-medium w-[36px] h-[36px] text-[24px] md:w-[44px] md:h-[44px] md:text-xl lg:w-[48px] lg:h-[48px] lg:text-2xl"
+                          >
+                            {item.icon}
+                          </Button>
+                        }
+                      />
+                    ) : (
+                      <Button
+                        as={Link}
+                        color="default"
+                        href={item.href}
+                        variant={item.variant as ButtonProps["variant"]}
+                        isIconOnly
+                        className="font-medium w-[36px] h-[36px] text-[24px] md:w-[44px] md:h-[44px] md:text-xl lg:w-[48px] lg:h-[48px] lg:text-2xl"
+                      >
+                        {item.icon}
+                      </Button>
+                    )}
                   </Badge>
                 )}
               </NavbarItem>
@@ -139,20 +176,9 @@ const HomepageLayoutNavbar = () => {
         </div>
       </Navbar>
 
-      <div className="bg-[#D9D9D9]/15 px-10">
-        <div className="max-w-standard w-full mx-auto justify-center md:justify-between flex flex-wrap items-center">
-          {NAV_CATEGORIES.map((item) => (
-            <div
-              key={item.label}
-              className="flex items-center hover:bg-[#0A3353] hover:text-white p-5"
-            >
-              <Link href={item.href} className="font-medium text-center">
-                {item.label}
-              </Link>
-            </div>
-          ))}
-        </div>
-      </div>
+      <HomepageLayoutNavbarPopupHover 
+      
+      />
     </header>
   );
 };

@@ -13,7 +13,11 @@ const config: Config = {
       maxWidth: {
         standard: "1920px", 
       },
+      screens: {
+        xs: "321px",
+      },
     },
+    
   },
   darkMode: "class",
   plugins: [heroui()],

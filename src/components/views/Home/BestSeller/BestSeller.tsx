@@ -46,7 +46,7 @@ const BestSeller = () => {
           Best Seller Products
         </h1>
 
-        <div className="gap-4 grid grid-cols-2 sm:grid-cols-5">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-6">
           {bestSeller.map((item, index) => (
             <CardProduct
               key={index}
