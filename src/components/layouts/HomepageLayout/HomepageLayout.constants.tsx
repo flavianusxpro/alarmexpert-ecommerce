@@ -35,7 +35,7 @@ const AUTH_BUTTONS = [
 const USER_ACTION_BUTTONS = [
   {
     label: "Wishlist",
-    href: "/wishlist",
+    href: "/product/wishlist",
     variant: "light",
     isAuthBtn: false,
     icon: <FaRegHeart />,

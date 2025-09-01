@@ -46,13 +46,13 @@ const HomepageLayoutNavbar = () => {
             </p>
           </NavbarContent>
 
-          <NavbarContent justify="end" className="gap-[30px]">
+          <NavbarContent justify="end" className="gap-[30px] hidden lg:flex">
             {NAV_LINKS.map((item) => (
               <NavbarItem
                 as={Link}
                 href={item.href}
                 key={`nav-${item.label}`}
-                className="text-white hover:text-gray-300 hidden lg:flex lg:relative text-[14px] md:text-[18px]"
+                className="text-white hover:text-gray-300 lg:relative text-[14px] md:text-[18px]"
               >
                 {item.label}
               </NavbarItem>
@@ -176,9 +176,7 @@ const HomepageLayoutNavbar = () => {
         </div>
       </Navbar>
 
-      <HomepageLayoutNavbarPopupHover 
-      
-      />
+      <HomepageLayoutNavbarPopupHover />
     </header>
   );
 };

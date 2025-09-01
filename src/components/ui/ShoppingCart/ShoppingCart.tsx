@@ -358,7 +358,7 @@ const ShoppingCart = ({ isOpen, onOpenChange, triggerButton }: PropTypes) => {
 
                                 <div className="flex justify-between gap-[20px]">
                                     <Button radius="full" variant="bordered" className="text-[#0A3353] px-[65px] py-[15px] border-[#0A3353] text-[20px] font-semibold border-[1px]" onPress={onClose}>
-                                        View Chart
+                                        View Cart
                                     </Button>
                                     
                                      <Button radius="full" variant="solid" className="text-white px-[65px] py-[15px] bg-[#0A3353] text-[20px] font-semibold border-[1px]" onPress={onClose}>
