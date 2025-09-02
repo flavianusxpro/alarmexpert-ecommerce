@@ -33,7 +33,7 @@ const Wishlist = () => {
         <Container>
             <PageWrapper breadcrumbs={BREADCRUMBS_WISHLIST} title="Wishlist">
                 <div className="flex flex-col gap-5">
-                    <div className="flex justify-between border-[#000000]/20 p-5 rounded-[8px] border-[0.5px]">
+                    <div className="flex justify-between border-black/20 p-5 rounded-[8px] border-[0.5px]">
                         <Checkbox defaultSelected>Select All</Checkbox>
 
                         <Button
@@ -45,7 +45,7 @@ const Wishlist = () => {
                         </Button>
                     </div>
 
-                    <div className="border-[#000000]/20 p-5 rounded-[8px] border-[0.5px] flex flex-col gap-10">
+                    <div className="border-black/20 p-5 rounded-[8px] border-[0.5px] flex flex-col gap-10">
                         <div className="flex gap-4 items-center">
                             <div className="flex-shrink-0">
                                 <Checkbox defaultSelected />
@@ -76,7 +76,7 @@ const Wishlist = () => {
                                         >
                                             In Stock
                                         </Chip>
-                                        <Button className="bg-[#0A3353] font-semibold text-[16px] py-3 px-8 text-white rounded-[50px] whitespace-nowrap">
+                                        <Button className="bg-primary font-semibold text-[16px] py-3 px-8 text-white rounded-[50px] whitespace-nowrap">
                                             Add to Cart
                                         </Button>
                                     </div>
@@ -108,7 +108,7 @@ const Wishlist = () => {
                                         >
                                             In Stock
                                         </Chip>
-                                        <Button className="bg-[#0A3353] font-semibold text-[16px] py-3 px-8 text-white rounded-[50px] whitespace-nowrap">
+                                        <Button className="bg-primary font-semibold text-[16px] py-3 px-8 text-white rounded-[50px] whitespace-nowrap">
                                             Add to Cart
                                         </Button>
                                     </div>

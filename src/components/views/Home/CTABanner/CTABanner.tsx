@@ -3,7 +3,7 @@ import Container from "@/components/ui/Container";
 const CTABanner = () => {
   return (
     <Container className="p-8">
-      <div className="bg-[#F6F7E5] w-full py-4 px-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-10 md:gap-0 rounded-lg">
+      <div className="bg-neutral w-full py-4 px-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-10 md:gap-0 rounded-lg">
         <div className="flex items-center gap-[29px]">
           <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
             <svg
@@ -21,7 +21,7 @@ const CTABanner = () => {
             </svg>
           </div>
           <div>
-            <p className="text-[25px] font-medium text-[#008337]">
+            <p className="text-[25px] font-medium text-success">
               {"We're now available"} <br />{" "}
               <span className="text-[30px] font-semibold">on WhatsApp!</span>
             </p>
@@ -29,13 +29,13 @@ const CTABanner = () => {
         </div>
 
         <div className="hidden md:block">
-          <p className="text-[25px] font-medium text-[#707070]">
+          <p className="text-[25px] font-medium text-gray">
             Talk to us on WhatsApp! <br />{" "}
             <span className="font-bold">Open daily from 8 AM to 10 PM</span>{" "}
           </p>
         </div>
 
-        <button className="bg-[#008337] hover:bg-green-700 text-[#F6F7E5] px-[10px] py-[15px] w-[143px] rounded-full font-semibold text-[20px]">
+        <button className="bg-success hover:bg-green-700 text-neutral px-[10px] py-[15px] w-[143px] rounded-full font-semibold text-[20px]">
           Chat Now
         </button>
       </div>

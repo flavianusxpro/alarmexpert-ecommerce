@@ -37,7 +37,7 @@ const HomepageLayoutNavbar = () => {
         maxWidth="full"
         position="static"
         isBordered
-        className="bg-[#0A3353] px-5"
+        className="bg-primary px-5"
       >
         <div className="max-w-standard w-full mx-auto flex items-center">
           <NavbarContent justify="start">

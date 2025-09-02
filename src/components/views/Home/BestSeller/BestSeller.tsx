@@ -42,7 +42,7 @@ const BestSeller = () => {
   return (
     <Container>
       <div className="w-full">
-        <h1 className="text-center font-bold pb-8 text-[40px] text-[#0A3353]">
+        <h1 className="text-center font-bold pb-8 text-[40px] text-primary">
           Best Seller Products
         </h1>
 

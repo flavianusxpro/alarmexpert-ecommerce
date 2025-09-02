@@ -13,7 +13,7 @@ const HomepageLayoutNavbarPopupHover = () => {
 
   return (
     <div className="relative" onMouseLeave={handleDelayedMouseLeave}>
-      <div className="bg-[#D9D9D9]/15 px-10 flex flex-wrap justify-center md:justify-around">
+      <div className="bg-muted/15 px-10 flex flex-wrap justify-center md:justify-around">
         <div className="max-w-standard w-full mx-auto justify-center sm:justify-center md:justify-between flex flex-wrap items-center">
           {NAV_CATEGORIES.map((item) => (
             <div

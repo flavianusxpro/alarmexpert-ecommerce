@@ -23,13 +23,13 @@ const ArticleSection = () => {
         {articles.map((article) => (
           <div
             key={article.id}
-            className="flex flex-col md:p-10 lg:p-20 p-5 gap-[100px] bg-[#D9D9D9] rounded-lg"
+            className="flex flex-col md:p-10 lg:p-20 p-5 gap-[100px] bg-muted rounded-lg"
           >
-            <h1 className="text-[26px] font-semibold mb-3 text-[#0A3353]">
+            <h1 className="text-[26px] font-semibold mb-3 text-primary">
               {article.description}
             </h1>
             <Button
-              className="bg-white py-[15px] px-[10px] w-[150px] font-bold text-[#0A3353] text-[20px]"
+              className="bg-white py-[15px] px-[10px] w-[150px] font-bold text-primary text-[20px]"
               radius="full"
             >
               {article.buttonText}

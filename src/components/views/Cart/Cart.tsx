@@ -14,7 +14,7 @@ const Cart = () => {
             >
                 <div className="flex justify-between flex-col lg:flex-row gap-10 lg:gap-5">
                     <div className="flex flex-col gap-5 w-full lg:w-[60%]">
-                        <div className="flex justify-between border-[#000000]/20 p-5 rounded-[8px] border-[0.5px]">
+                        <div className="flex justify-between border-black/20 p-5 rounded-[8px] border-[0.5px]">
                             <Checkbox defaultSelected>Select All</Checkbox>
                             <Button
                                 color="danger"
@@ -25,7 +25,7 @@ const Cart = () => {
                             </Button>
                         </div>
 
-                        <div className="border-[#000000]/20 p-5 rounded-[8px] border-[0.5px] flex flex-col gap-10">
+                        <div className="border-black/20 p-5 rounded-[8px] border-[0.5px] flex flex-col gap-10">
                             <div className="flex items-center">
                                 <div className="flex-shrink-0">
                                     <Checkbox defaultSelected />
@@ -50,7 +50,7 @@ const Cart = () => {
 
                                         <div className="flex flex-col justify-end items-end gap-5 w-[60%]">
                                             <div className="w-full">
-                                                <p className="font-bold text-[25px] text-[#0A3353] text-right">
+                                                <p className="font-bold text-[25px] text-primary text-right">
                                                     $79.00
                                                 </p>
                                             </div>
@@ -75,7 +75,7 @@ const Cart = () => {
                                                     </Button>
                                                 </div>
 
-                                                <div className="w-[182px] h-[50px] bg-[#3666AA1A]/10 rounded-full flex items-center justify-between">
+                                                <div className="w-[182px] h-[50px] bg-secondary/10 rounded-full flex items-center justify-between">
                                                     <Button
                                                         color="default"
                                                         variant="light"
@@ -117,7 +117,7 @@ const Cart = () => {
 
                                         <div className="flex flex-col gap-4">
                                             <div>
-                                                <p className="font-bold text-[20px] sm:text-[22px] text-[#0A3353]">
+                                                <p className="font-bold text-[20px] sm:text-[22px] text-primary">
                                                     $79.00
                                                 </p>
                                             </div>
@@ -142,7 +142,7 @@ const Cart = () => {
                                                     </Button>
                                                 </div>
 
-                                                <div className="w-full sm:w-[150px] h-[45px] bg-[#3666AA1A]/10 rounded-full flex items-center justify-between px-2">
+                                                <div className="w-full sm:w-[150px] h-[45px] bg-secondary/10 rounded-full flex items-center justify-between px-2">
                                                     <Button
                                                         color="default"
                                                         variant="light"
@@ -169,7 +169,7 @@ const Cart = () => {
                         </div>
 
                         <div className="flex justify-between flex-col md:flex-row gap-[16px] items-center">
-                            <Button radius="full" className="bg-[#0A3353] px-[43px] py-[17px] text-white text-[18px] w-full md:w-auto font-semibold">
+                            <Button radius="full" className="bg-primary px-[43px] py-[17px] text-white text-[18px] w-full md:w-auto font-semibold">
                                 Back to Product
                             </Button>
 
@@ -179,14 +179,14 @@ const Cart = () => {
                                     width={361}
                                     placeholder="Enter your cupon"
                                 />
-                                <Button radius="full" variant="bordered" className="text-[#0A3353] px-[43px] py-[17px] border-[#0A3353] text-[18px] font-semibold border-[1px]">
+                                <Button radius="full" variant="bordered" className="text-primary px-[43px] py-[17px] border-primary text-[18px] font-semibold border-[1px]">
                                     Apply
                                 </Button>
                             </div>
                         </div>
                     </div>
 
-                    <div className="border-[#000000]/20 p-5 rounded-[8px] border-[0.5px] w-full lg:w-[40%] lg:sticky lg:top-5">
+                    <div className="border-black/20 p-5 rounded-[8px] border-[0.5px] w-full lg:w-[40%] lg:sticky lg:top-5">
                         <div className="flex flex-col gap-5 mb-6">
                             <h1 className="text-[25px] font-semibold">Summary Cart</h1>
 
@@ -208,17 +208,17 @@ const Cart = () => {
                         </div>
 
                         <div className="flex justify-between my-6">
-                            <h2 className="text-[22px] font-bold text-[#0A3353]">
+                            <h2 className="text-[22px] font-bold text-primary">
                                 Total
                             </h2>
 
-                            <p className="text-[22px] font-bold text-[#0A3353]">
+                            <p className="text-[22px] font-bold text-primary">
                                 $12.0
                             </p>
                         </div>
 
                         <div className="flex justify-center items-center">
-                            <Button radius="full" className="bg-[#0A3353] px-[65px] py-[17px] text-white text-[20px] w-full md:w-auto font-semibold">
+                            <Button radius="full" className="bg-primary px-[65px] py-[17px] text-white text-[20px] w-full md:w-auto font-semibold">
                                 Proceed to Checkout
                             </Button>
                         </div>

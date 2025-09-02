@@ -88,7 +88,7 @@ const HomepageLayoutFooter = () => {
                   {menu.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="text-[14px] p-[10px] font-medium text-[#0A3353] bg-[#3666AA]/10"
+                      className="text-[14px] p-[10px] font-medium text-primary bg-secondary/10"
                     >
                       {tag}
                     </span>
@@ -100,14 +100,14 @@ const HomepageLayoutFooter = () => {
         </div>
       </div>
 
-      <div className="p-8 bg-[#0A3353]">
+      <div className="p-8 bg-primary">
         <div className="flex max-w-standard text-center sm:text-start gap-5 sm:gap-2 w-full mx-auto flex-col sm:flex-row justify-between items-center">
-          <div className="text-[16px] font-medium text-[#FFFFFF]">
+          <div className="text-[16px] font-medium text-white">
             Copyright Alarm Expert T/AS Xprogroup Pty Ltd
           </div>
 
           <div className="flex items-center">
-            <div className="text-[16px] text-[#FFFFFF] font-medium">
+            <div className="text-[16px] text-white font-medium">
               Any illegal reproduction of this content will result in immediate
               legal action.
             </div>

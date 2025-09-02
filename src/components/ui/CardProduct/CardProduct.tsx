@@ -14,7 +14,7 @@ const CardProduct = ({ title, img, price, rating, onSale }: PropTypes) => {
     return (
         <Card shadow="sm" className="flex flex-col justify-between" isHoverable>
             {onSale && (
-                <CardHeader className="absolute p-1 flex z-10 bg-[#E62727]/60 backdrop-blur-xl justify-center">
+                <CardHeader className="absolute p-1 flex z-10 bg-danger/60 backdrop-blur-xl justify-center">
                     <p className="text-white font-bold text-[18px]">
                         ON SALE
                     </p>
@@ -34,7 +34,7 @@ const CardProduct = ({ title, img, price, rating, onSale }: PropTypes) => {
 
             <CardFooter className="flex flex-col items-start gap-2">
                 <p className="text-black text-[22px] font-semibold">{title}</p>
-                <p className="text-[#0A3353] font-semibold text-[35px]">{price}</p>
+                <p className="text-primary font-semibold text-[35px]">{price}</p>
 
                 <div className="flex items-center justify-between w-full">
                     <div className="flex items-center text-yellow-400">

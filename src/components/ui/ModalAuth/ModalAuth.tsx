@@ -55,7 +55,7 @@ const ModalAuth = ({ isOpen, onOpenChange, triggerButton }: PropTypes) => {
 
               <div className="flex justify-between items-center">
                 <p className="text-[14px] font medium">
-                  <Link href="#" className="text-[#0A3353]">
+                  <Link href="#" className="text-primary">
                     Forgot password?
                   </Link>
                 </p>
@@ -64,7 +64,7 @@ const ModalAuth = ({ isOpen, onOpenChange, triggerButton }: PropTypes) => {
 
             <div className="flex justify-center">
               <Button
-                className="bg-[#0A3353] text-white text-[20px] font-bold rounded-full px-[65px] py-[15px]"
+                className="bg-primary text-white text-[20px] font-bold rounded-full px-[65px] py-[15px]"
                 onPress={() => onOpenChange(false)}
               >
                 Sign in
@@ -73,7 +73,7 @@ const ModalAuth = ({ isOpen, onOpenChange, triggerButton }: PropTypes) => {
 
             <p className="text-center text-[16px] font-medium text-black">
               {"Don't have an account?"}&nbsp;
-              <Link href="#" className="text-[#0A3353] font-bold text-[16px]">
+              <Link href="#" className="text-primary font-bold text-[16px]">
                 Signup
               </Link>
             </p>

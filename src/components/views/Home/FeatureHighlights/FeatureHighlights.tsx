@@ -4,7 +4,7 @@ import Container from "@/components/ui/Container";
 
 const FeatureHighlights = () => {
   return (
-    <Container className="bg-[#F5F5F5]">
+    <Container className="bg-light">
       <div className="w-full">
         <div
           className="
@@ -18,7 +18,7 @@ const FeatureHighlights = () => {
               key={`feature-${item.title}`}
               className="flex items-center gap-4 p-4 rounded-lg"
             >
-              <div className="bg-[#0A3353] rounded-full p-3 flex items-center justify-center">
+              <div className="bg-primary rounded-full p-3 flex items-center justify-center">
                 {React.cloneElement(item.icon, {
                   className: "w-6 h-6 text-white",
                 })}
@@ -27,7 +27,7 @@ const FeatureHighlights = () => {
                 <h3 className="font-semibold text-black text-[18px]">
                   {item.title}
                 </h3>
-                <p className="text-[#707070] text-[14px]">{item.description}</p>
+                <p className="text-gray text-[14px]">{item.description}</p>
               </div>
             </div>
           ))}

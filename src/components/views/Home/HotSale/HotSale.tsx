@@ -48,10 +48,10 @@ const HotSale = () => {
       className="w-full h-[300px]"
     >
       <CardHeader className="absolute z-10 top-1 flex-col items-start">
-        <p className="text-[30px] font-semibold text-[#0A3353]">
+        <p className="text-[30px] font-semibold text-primary">
           {item.title}
         </p>
-        <h4 className="text-[#0A3353] font-medium text-xl">
+        <h4 className="text-primary font-medium text-xl">
           {item.discount}
         </h4>
       </CardHeader>
@@ -77,7 +77,7 @@ const HotSale = () => {
         </div>
         <Button
           radius="full"
-          className="bg-[#3666AA] text-white text-[20px] font-bold "
+          className="bg-secondary text-white text-[20px] font-bold "
         >
           {item.buttonText}
         </Button>

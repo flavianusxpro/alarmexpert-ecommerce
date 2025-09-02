@@ -63,7 +63,7 @@ const PopularCategories = () => {
                   className="absolute z-10 flex-col items-start gap-[20px] 
                          bg-white/40 backdrop-blur-sm"
                 >
-                  <h4 className="text-[#0A3353] text-[30px] font-semibold">
+                  <h4 className="text-primary text-[30px] font-semibold">
                     {item.title}
                   </h4>
                   <Button

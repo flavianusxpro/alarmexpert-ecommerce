@@ -78,7 +78,7 @@ const ShoppingCart = ({ isOpen, onOpenChange, triggerButton }: PropTypes) => {
                                                                 Smart Lock Pro
                                                             </h1>
 
-                                                            <h2 className="text-[22px] font-semibold text-[#0A3353]">
+                                                            <h2 className="text-[22px] font-semibold text-primary">
                                                                 $79.0
                                                             </h2>
                                                         </div>
@@ -136,7 +136,7 @@ const ShoppingCart = ({ isOpen, onOpenChange, triggerButton }: PropTypes) => {
                                                                 Wireless Headphones
                                                             </h1>
 
-                                                            <h2 className="text-[22px] font-semibold text-[#0A3353]">
+                                                            <h2 className="text-[22px] font-semibold text-primary">
                                                                 $159.0
                                                             </h2>
                                                         </div>
@@ -194,7 +194,7 @@ const ShoppingCart = ({ isOpen, onOpenChange, triggerButton }: PropTypes) => {
                                                                 Smartphone Case Premium
                                                             </h1>
 
-                                                            <h2 className="text-[22px] font-semibold text-[#0A3353]">
+                                                            <h2 className="text-[22px] font-semibold text-primary">
                                                                 $29.0
                                                             </h2>
                                                         </div>
@@ -252,7 +252,7 @@ const ShoppingCart = ({ isOpen, onOpenChange, triggerButton }: PropTypes) => {
                                                                 Bluetooth Speaker Portable
                                                             </h1>
 
-                                                            <h2 className="text-[22px] font-semibold text-[#0A3353]">
+                                                            <h2 className="text-[22px] font-semibold text-primary">
                                                                 $89.0
                                                             </h2>
                                                         </div>
@@ -310,7 +310,7 @@ const ShoppingCart = ({ isOpen, onOpenChange, triggerButton }: PropTypes) => {
                                                                 USB-C Cable Fast Charging
                                                             </h1>
 
-                                                            <h2 className="text-[22px] font-semibold text-[#0A3353]">
+                                                            <h2 className="text-[22px] font-semibold text-primary">
                                                                 $19.0
                                                             </h2>
                                                         </div>
@@ -349,19 +349,19 @@ const ShoppingCart = ({ isOpen, onOpenChange, triggerButton }: PropTypes) => {
                                 <div className="mb-4 flex justify-between">
                                     <div className="flex items-center">
                                         <span className="text-xl font-bold">Total :</span>&nbsp;
-                                        <span className="text-xl font-bold text-[#0A3353]">$375.0</span>
+                                        <span className="text-xl font-bold text-primary">$375.0</span>
                                     </div>
-                                     <Button radius="full" variant="bordered" className="text-black px-[20px] py-[10px] border-[#000000]/20 text-[16px] font-medium border-[0.5px]" onPress={onClose}>
+                                     <Button radius="full" variant="bordered" className="text-black px-[20px] py-[10px] border-black/20 text-[16px] font-medium border-[0.5px]" onPress={onClose}>
                                         Clear all items
                                     </Button>
                                 </div>
 
                                 <div className="flex justify-between gap-[20px]">
-                                    <Button radius="full" variant="bordered" className="text-[#0A3353] px-[65px] py-[15px] border-[#0A3353] text-[20px] font-semibold border-[1px]" onPress={onClose}>
+                                    <Button radius="full" variant="bordered" className="text-primary px-[65px] py-[15px] border-primary text-[20px] font-semibold border-[1px]" onPress={onClose}>
                                         View Cart
                                     </Button>
                                     
-                                     <Button radius="full" variant="solid" className="text-white px-[65px] py-[15px] bg-[#0A3353] text-[20px] font-semibold border-[1px]" onPress={onClose}>
+                                     <Button radius="full" variant="solid" className="text-white px-[65px] py-[15px] bg-primary text-[20px] font-semibold border-[1px]" onPress={onClose}>
                                         Checkout
                                     </Button>
                                 </div>
